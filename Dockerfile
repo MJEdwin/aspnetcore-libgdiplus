@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.0.0-preview9
 
 RUN apt-get update \ 
     && apt-get install -y --no-install-recommends libgdiplus libc6-dev \
