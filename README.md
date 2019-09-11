@@ -12,7 +12,11 @@ docker build -t jiangming/aspnetcore-libgdiplus .
 this image tag|microsoft/aspnetcore tag|aspnetcore version
 -|-|-
 1.1|1.1|1.1
-2.0 latest|2.0|2.0
+2.0|2.0|2.0
+2.1|2.1|2.1
+2.2 latest|2.2|2.2
+3.0-preview|3.0|3.0
+
 # Dockerfile Example
 ```
 FROM jiangming/aspnetcore-libgdiplus
