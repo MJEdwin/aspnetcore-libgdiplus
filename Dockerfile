@@ -1,7 +1,9 @@
-FROM microsoft/aspnetcore
+FROM microsoft/aspnetcore:1.1
 
-MAINTAINER jiangming  zj726381216@live.com
-
-RUN apt-get update && apt-get install libgdiplus
+RUN apt-get update \ 
+    && apt-get install -y --no-install-recommends libgdiplus libc6-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN cd /usr/lib && ln -s libgdiplus.so gdiplus.dll
+
